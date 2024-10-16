@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Distância</title>
+</head>
+<body>
+    <h1>Calcule a Distância Total</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Calcular">
+    </form>
+    {% if result %}
+        <p>A distância total percorrida é: {{ result }} km</p>
+    {% endif %}
+</body>
+</html>
